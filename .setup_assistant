@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: hector_tracked_vehicles_description
+    relative_path: urdf/jasmine_2018_ugv.urdf.xacro
+  SRDF:
+    relative_path: config/jasmine_ugv.srdf
+  CONFIG:
+    author_name: Stefan Kohlbrecher
+    author_email: kohlbrecher@sim.tu-darmstadt.de
+    generated_timestamp: 1520863800

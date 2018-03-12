@@ -1,0 +1,5 @@
+controller_list:
+  - name: fake_sensor_head_group_controller
+    joints:
+      - sensor_head_yaw_joint
+      - sensor_head_pitch_joint
