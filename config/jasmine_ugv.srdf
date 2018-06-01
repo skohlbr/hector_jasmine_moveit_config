@@ -26,15 +26,33 @@
         <joint name="arm_pitch_joint_1" />
         <joint name="arm_pitch_joint_2" />
         <joint name="arm_pitch_joint_3" />
-        <joint name="arm_roll_joint" />       
+        <joint name="arm_roll_joint" />
         <joint name="gripper_servo_joint" />
     </group>
-    
-    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
-    <passive_joint name="spin_lidar_spin_joint" />
+    <group name="gripper_endeffector_group">
+        <joint name="gripper_finger_joint_1" />
+        <joint name="gripper_finger_joint_2" />
+        <joint name="gripper_grasp" />
+        <joint name="gripper_servo_joint" />
+        <joint name="gripper_mount_joint" />
+    </group>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="gripper_endeffector" parent_link="gripper_palm_link" group="gripper_endeffector_group" parent_group="arm_with_gripper_group" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="world_virtual_joint" type="floating" parent_frame="world" child_link="base_link" />
+    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+    <passive_joint name="spin_lidar_spin_joint" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="arm_link_0" link2="arm_link_1" reason="Adjacent" />
+    <disable_collisions link1="arm_link_0" link2="base_link" reason="Adjacent" />
+    <disable_collisions link1="arm_link_1" link2="arm_link_2" reason="Adjacent" />
+    <disable_collisions link1="arm_link_2" link2="arm_link_3" reason="Adjacent" />
+    <disable_collisions link1="arm_link_3" link2="arm_link_4" reason="Adjacent" />
+    <disable_collisions link1="arm_link_4" link2="arm_link_5" reason="Adjacent" />
+    <disable_collisions link1="arm_link_5" link2="gripper_finger_link_1" reason="Adjacent" />
+    <disable_collisions link1="arm_link_5" link2="gripper_finger_link_2" reason="Adjacent" />
+    <disable_collisions link1="arm_link_5" link2="gripper_grasp_link" reason="Adjacent" />
+    <disable_collisions link1="arm_link_5" link2="gripper_palm_link" reason="Adjacent" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="arm_thermal_cam_frame" reason="Adjacent" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="base_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="sensor_head_yaw_link" reason="Adjacent" />
@@ -45,24 +63,11 @@
     <disable_collisions link1="base_link" link2="sensor_head_yaw_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="spin_lidar_lidar_mount_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
+    <disable_collisions link1="base_link" link2="structure_addons_link" reason="Never" />
+    <disable_collisions link1="gripper_finger_link_1" link2="gripper_palm_link" reason="Adjacent" />
+    <disable_collisions link1="gripper_finger_link_2" link2="gripper_palm_link" reason="Adjacent" />
+    <disable_collisions link1="gripper_palm_link" link2="gripper_servo_link" reason="Adjacent" />
     <disable_collisions link1="sensor_head_yaw_link" link2="spin_lidar_lidar_mount_link" reason="Never" />
     <disable_collisions link1="sensor_head_yaw_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="spin_lidar_lidar_mount_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="structure_addons_link" reason="Never" />
-    
-    <disable_collisions link1="base_link" link2="arm_link_0" reason="Adjacent" />
-    <disable_collisions link1="arm_link_0" link2="arm_link_1" reason="Adjacent" />
-    <disable_collisions link1="arm_link_1" link2="arm_link_2" reason="Adjacent" />
-    <disable_collisions link1="arm_link_2" link2="arm_link_3" reason="Adjacent" />
-    <disable_collisions link1="arm_link_3" link2="arm_link_4" reason="Adjacent" />
-    <disable_collisions link1="arm_link_4" link2="arm_link_5" reason="Adjacent" />
-    
-    <disable_collisions link1="arm_link_5" link2="gripper_palm_link" reason="Adjacent" />
-    <disable_collisions link1="arm_link_5" link2="gripper_grasp_link" reason="Adjacent" />
-    <disable_collisions link1="arm_link_5" link2="gripper_finger_link_1" reason="Adjacent" />
-    <disable_collisions link1="arm_link_5" link2="gripper_finger_link_2" reason="Adjacent" />
-    <disable_collisions link1="gripper_palm_link" link2="gripper_finger_link_1" reason="Adjacent" />
-    <disable_collisions link1="gripper_palm_link" link2="gripper_finger_link_2" reason="Adjacent" />
-    <disable_collisions link1="gripper_palm_link" link2="gripper_servo_link" reason="Adjacent" />
-
 </robot>
