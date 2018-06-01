@@ -1,0 +1,25 @@
+controller_manager_ns: moveit_simple_controller_manager
+controller_list:
+ - name: /manipulator_arm_control/manipulator_arm_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - arm_yaw_joint
+      - arm_pitch_joint_1
+      - arm_pitch_joint_2
+      - arm_pitch_joint_3 
+      - arm_roll_joint
+ - name: /sensor_head_control/sensor_head_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - sensor_head_yaw_joint
+      - sensor_head_pitch_joint
+ - name: /gripper_control/gripper_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - gripper_servo_joint
