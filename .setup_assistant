@@ -7,4 +7,4 @@ moveit_setup_assistant_config:
   CONFIG:
     author_name: Stefan Kohlbrecher
     author_email: kohlbrecher@sim.tu-darmstadt.de
-    generated_timestamp: 1527860829
+    generated_timestamp: 1527863633
