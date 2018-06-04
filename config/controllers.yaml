@@ -6,9 +6,9 @@ controller_list:
    default: true
    joints:
       - arm_yaw_joint
+      - arm_pitch_joint_0
       - arm_pitch_joint_1
-      - arm_pitch_joint_2
-      - arm_pitch_joint_3 
+      - arm_pitch_joint_2 
       - arm_roll_joint
  - name: /sensor_head_control/sensor_head_traj_controller
    action_ns: follow_joint_trajectory
