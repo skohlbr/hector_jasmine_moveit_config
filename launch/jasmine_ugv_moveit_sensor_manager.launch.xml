@@ -1,5 +1,5 @@
 <launch>
-  <rosparam command="load" file="$(find argo_tracker_robot_moveit_config)/config/sensors/sensors_lidar.yaml" />
+  <rosparam command="load" file="$(find hector_jasmine_moveit_config)/config/sensors/sensors_lidar.yaml" />
   
   <!--Not used for point cloud updater-->
   <!--<rosparam command="load" file="$(find argo_tracker_robot_moveit_config)/config/sensors/filters_lidar.yaml" />-->
