@@ -8,5 +8,5 @@
   <param name="octomap_resolution" type="double" value="0.05" />
   
   <!--@TODO: Appears this is a duplicate of what's in the yaml above-->
-  <param name="max_range" type="double" value="5.5" />
+  <!--<param name="max_range" type="double" value="5.5" />-->
 </launch>
