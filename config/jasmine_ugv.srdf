@@ -88,6 +88,7 @@
     <disable_collisions link1="arm_rgbd_cam_link" link2="sensor_head_yaw_link" reason="Adjacent" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="arm_roll_link" link2="gripper_finger_link_0" reason="Never" />
+    <disable_collisions link1="arm_roll_link" link2="gripper_finger_link_1" reason="Never" />
     <disable_collisions link1="arm_roll_link" link2="gripper_palm_link" reason="Adjacent" />
     <disable_collisions link1="arm_roll_link" link2="gripper_servo_link" reason="Never" />
     <disable_collisions link1="arm_roll_link" link2="sensor_head_yaw_link" reason="Never" />
