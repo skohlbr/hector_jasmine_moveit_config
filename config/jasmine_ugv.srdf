@@ -21,7 +21,20 @@
         <joint name="arm_pitch_joint_2" />
         <joint name="arm_roll_joint" />
         <joint name="gripper_palm_joint" />
+        <joint name="gripper_grasp_joint" />
     </group>
+    
+    <group name="arm_with_gripper_cam_group">
+      <joint name="arm_base_joint" />
+      <joint name="arm_yaw_joint" />
+      <joint name="arm_pitch_joint_0" />
+      <joint name="arm_pitch_joint_1" />
+      <joint name="arm_pitch_joint_2" />
+      <joint name="arm_roll_joint" />
+      <joint name="gripper_palm_joint" />
+      <joint name="gripper_cam_joint" />
+    </group>
+    
     <group name="arm_with_gripper_group_ceres">
         <group name="arm_with_gripper_group" />
     </group>
@@ -32,8 +45,13 @@
         <link name="gripper_finger_link_1" />
         <link name="gripper_servo_link" />
     </group>
+    <group name="gripper_cam_endeffector_group">
+        <link name="gripper_cam_link" />
+        <link name="gripper_cam_optical_frame" />
+    </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="gripper_endeffector" parent_link="gripper_palm_link" group="gripper_endeffector_group" />
+    <end_effector name="gripper_endeffector" parent_link="gripper_grasp_link" group="gripper_endeffector_group" />
+    <end_effector name="gripper_cam__endeffector" parent_link="gripper_cam_link" group="gripper_cam_endeffector_group" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="world_virtual_joint" type="floating" parent_frame="world" child_link="base_link" />
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
