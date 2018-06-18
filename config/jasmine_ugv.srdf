@@ -67,6 +67,7 @@
     <disable_collisions link1="gripper_finger_link_0" link2="<octomap>" reason="Never" />
     <disable_collisions link1="gripper_finger_link_1" link2="<octomap>" reason="Never" />
     <disable_collisions link1="gripper_servo_link" link2="<octomap>" reason="Never" />
+    <disable_collisions link1="gripper_finger_link_0" link2="gripper_finger_link_1" reason="Never" />
       
     <disable_collisions link1="arm_base_link" link2="arm_pitch_link_0" reason="Never" />
     <disable_collisions link1="arm_base_link" link2="arm_pitch_link_1" reason="Never" />
