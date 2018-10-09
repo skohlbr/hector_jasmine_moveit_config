@@ -57,6 +57,8 @@
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <passive_joint name="spin_lidar_spin_joint" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="autonomy_box_link" link2="base_link" reason="Adjacent" />
+    <disable_collisions link1="autonomy_box_link" link2="manipulation_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="arm_base_link" link2="<octomap>" reason="Never" />
     <disable_collisions link1="arm_yaw_link" link2="<octomap>" reason="Never" />
     <disable_collisions link1="arm_pitch_link_0" link2="<octomap>" reason="Never" />
