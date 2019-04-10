@@ -127,4 +127,6 @@
     <disable_collisions link1="manipulation_rgbd_cam_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="manipulation_rgbd_cam_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="sensor_head_yaw_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
+    <disable_collisions link1="chassis_link" link2="autonomy_box_link" reason="Adjacent" />
+    <disable_collisions link1="chassis_link" link2="arm_base_link" reason="Adjacent" />
 </robot>
