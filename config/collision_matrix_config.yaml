@@ -1,0 +1,11 @@
+robot_description_planning:
+  default_collision_operations:
+  - object1: '<octomap>'
+    object2: 'chassis_link'
+    operation: 'disable'
+  - object1: '<octomap>'
+    object2: 'left_track_link'
+    operation: 'disable'
+  - object1: '<octomap>'
+    object2: 'right_track_link'
+    operation: 'disable'
