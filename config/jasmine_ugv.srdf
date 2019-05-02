@@ -67,15 +67,22 @@
     <disable_collisions link1="arm_base_link" link2="front_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="arm_base_link" link2="left_track_link" reason="Never" />
     <disable_collisions link1="arm_base_link" link2="right_track_link" reason="Never" />
-    <disable_collisions link1="arm_base_link" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="arm_base_link" link2="sensor_head_mount_link" reason="Adjacent" />
+    <disable_collisions link1="arm_base_link" link2="sensor_head_pitch_link" reason="Never" />
+    <disable_collisions link1="arm_base_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_base_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="arm_pitch_link_0" link2="arm_pitch_link_1" reason="Adjacent" />
+    <disable_collisions link1="arm_pitch_link_0" link2="arm_rgbd_cam_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_0" link2="arm_thermal_cam_frame" reason="Never" />
     <disable_collisions link1="arm_pitch_link_0" link2="arm_yaw_link" reason="Adjacent" />
     <disable_collisions link1="arm_pitch_link_0" link2="back_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_0" link2="camera360_center_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_0" link2="chassis_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_0" link2="front_rgbd_cam_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_0" link2="left_track_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_0" link2="right_track_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_0" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_0" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_0" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_1" link2="arm_pitch_link_2" reason="Adjacent" />
     <disable_collisions link1="arm_pitch_link_1" link2="arm_roll_link" reason="Never" />
@@ -85,39 +92,55 @@
     <disable_collisions link1="arm_pitch_link_1" link2="gripper_finger_link_1" reason="Never" />
     <disable_collisions link1="arm_pitch_link_1" link2="gripper_palm_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_1" link2="gripper_servo_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_1" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_1" link2="sensor_head_pitch_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_1" link2="sensor_head_yaw_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_2" link2="arm_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_2" link2="arm_roll_link" reason="Adjacent" />
     <disable_collisions link1="arm_pitch_link_2" link2="gripper_finger_link_0" reason="Never" />
     <disable_collisions link1="arm_pitch_link_2" link2="gripper_finger_link_1" reason="Never" />
     <disable_collisions link1="arm_pitch_link_2" link2="gripper_palm_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_2" link2="gripper_servo_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_2" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="arm_pitch_link_2" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="arm_pitch_link_2" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="arm_roll_link" reason="Never" />
-    <disable_collisions link1="arm_rgbd_cam_link" link2="arm_thermal_cam_frame" reason="Adjacent" />
+    <disable_collisions link1="arm_rgbd_cam_link" link2="arm_thermal_cam_frame" reason="Default" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="arm_yaw_link" reason="Never" />
+    <disable_collisions link1="arm_rgbd_cam_link" link2="autonomy_box_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="back_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="camera360_center_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="chassis_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="front_rgbd_cam_link" reason="Never" />
+    <disable_collisions link1="arm_rgbd_cam_link" link2="gripper_finger_link_0" reason="Never" />
+    <disable_collisions link1="arm_rgbd_cam_link" link2="gripper_finger_link_1" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="gripper_servo_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="left_track_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="right_track_link" reason="Never" />
-    <disable_collisions link1="arm_rgbd_cam_link" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="arm_rgbd_cam_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="arm_rgbd_cam_link" link2="sensor_head_pitch_link" reason="Adjacent" />
+    <disable_collisions link1="arm_rgbd_cam_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_rgbd_cam_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="arm_roll_link" link2="arm_thermal_cam_frame" reason="Never" />
     <disable_collisions link1="arm_roll_link" link2="gripper_finger_link_0" reason="Never" />
     <disable_collisions link1="arm_roll_link" link2="gripper_palm_link" reason="Adjacent" />
     <disable_collisions link1="arm_roll_link" link2="gripper_servo_link" reason="Never" />
+    <disable_collisions link1="arm_roll_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="arm_roll_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="arm_roll_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="arm_yaw_link" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="back_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="camera360_center_link" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="chassis_link" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="front_rgbd_cam_link" reason="Never" />
+    <disable_collisions link1="arm_thermal_cam_frame" link2="gripper_finger_link_0" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="gripper_finger_link_1" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="gripper_servo_link" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="left_track_link" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="right_track_link" reason="Never" />
-    <disable_collisions link1="arm_thermal_cam_frame" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="arm_thermal_cam_frame" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="arm_thermal_cam_frame" link2="sensor_head_pitch_link" reason="Adjacent" />
+    <disable_collisions link1="arm_thermal_cam_frame" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_thermal_cam_frame" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="arm_yaw_link" link2="autonomy_box_link" reason="Never" />
     <disable_collisions link1="arm_yaw_link" link2="back_rgbd_cam_link" reason="Never" />
@@ -126,6 +149,8 @@
     <disable_collisions link1="arm_yaw_link" link2="front_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="arm_yaw_link" link2="left_track_link" reason="Never" />
     <disable_collisions link1="arm_yaw_link" link2="right_track_link" reason="Never" />
+    <disable_collisions link1="arm_yaw_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="arm_yaw_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="arm_yaw_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="arm_yaw_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="autonomy_box_link" link2="back_rgbd_cam_link" reason="Adjacent" />
@@ -134,43 +159,70 @@
     <disable_collisions link1="autonomy_box_link" link2="front_rgbd_cam_link" reason="Adjacent" />
     <disable_collisions link1="autonomy_box_link" link2="left_track_link" reason="Never" />
     <disable_collisions link1="autonomy_box_link" link2="right_track_link" reason="Never" />
-    <disable_collisions link1="autonomy_box_link" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="autonomy_box_link" link2="sensor_head_mount_link" reason="Adjacent" />
+    <disable_collisions link1="autonomy_box_link" link2="sensor_head_pitch_link" reason="Never" />
+    <disable_collisions link1="autonomy_box_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="autonomy_box_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Adjacent" />
     <disable_collisions link1="back_rgbd_cam_link" link2="camera360_center_link" reason="Never" />
     <disable_collisions link1="back_rgbd_cam_link" link2="chassis_link" reason="Never" />
     <disable_collisions link1="back_rgbd_cam_link" link2="front_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="back_rgbd_cam_link" link2="left_track_link" reason="Never" />
     <disable_collisions link1="back_rgbd_cam_link" link2="right_track_link" reason="Never" />
+    <disable_collisions link1="back_rgbd_cam_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="back_rgbd_cam_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="back_rgbd_cam_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="back_rgbd_cam_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="camera360_center_link" link2="chassis_link" reason="Never" />
     <disable_collisions link1="camera360_center_link" link2="front_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="camera360_center_link" link2="left_track_link" reason="Never" />
     <disable_collisions link1="camera360_center_link" link2="right_track_link" reason="Never" />
+    <disable_collisions link1="camera360_center_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="camera360_center_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="camera360_center_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="camera360_center_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="chassis_link" link2="front_rgbd_cam_link" reason="Never" />
     <disable_collisions link1="chassis_link" link2="left_track_link" reason="Adjacent" />
     <disable_collisions link1="chassis_link" link2="right_track_link" reason="Adjacent" />
-    <disable_collisions link1="chassis_link" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="chassis_link" link2="sensor_head_mount_link" reason="Adjacent" />
+    <disable_collisions link1="chassis_link" link2="sensor_head_pitch_link" reason="Never" />
+    <disable_collisions link1="chassis_link" link2="sensor_head_yaw_link" reason="Default" />
     <disable_collisions link1="chassis_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="front_rgbd_cam_link" link2="left_track_link" reason="Never" />
     <disable_collisions link1="front_rgbd_cam_link" link2="right_track_link" reason="Never" />
+    <disable_collisions link1="front_rgbd_cam_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="front_rgbd_cam_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="front_rgbd_cam_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="front_rgbd_cam_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="gripper_finger_link_0" link2="gripper_palm_link" reason="Adjacent" />
     <disable_collisions link1="gripper_finger_link_0" link2="gripper_servo_link" reason="Never" />
+    <disable_collisions link1="gripper_finger_link_0" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="gripper_finger_link_0" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="gripper_finger_link_0" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="gripper_finger_link_1" link2="gripper_palm_link" reason="Adjacent" />
     <disable_collisions link1="gripper_finger_link_1" link2="gripper_servo_link" reason="Never" />
+    <disable_collisions link1="gripper_finger_link_1" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="gripper_finger_link_1" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="gripper_finger_link_1" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="gripper_palm_link" link2="gripper_servo_link" reason="Adjacent" />
+    <disable_collisions link1="gripper_palm_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="gripper_palm_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="gripper_palm_link" link2="sensor_head_yaw_link" reason="Never" />
+    <disable_collisions link1="gripper_servo_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="gripper_servo_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="gripper_servo_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="left_track_link" link2="right_track_link" reason="Never" />
+    <disable_collisions link1="left_track_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="left_track_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="left_track_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="left_track_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
+    <disable_collisions link1="right_track_link" link2="sensor_head_mount_link" reason="Never" />
+    <disable_collisions link1="right_track_link" link2="sensor_head_pitch_link" reason="Never" />
     <disable_collisions link1="right_track_link" link2="sensor_head_yaw_link" reason="Never" />
     <disable_collisions link1="right_track_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
+    <disable_collisions link1="sensor_head_mount_link" link2="sensor_head_pitch_link" reason="Never" />
+    <disable_collisions link1="sensor_head_mount_link" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="sensor_head_mount_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
+    <disable_collisions link1="sensor_head_pitch_link" link2="sensor_head_yaw_link" reason="Adjacent" />
+    <disable_collisions link1="sensor_head_pitch_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="sensor_head_yaw_link" link2="spin_lidar_pitch_hokuyo_laser_frame" reason="Never" />
 </robot>
