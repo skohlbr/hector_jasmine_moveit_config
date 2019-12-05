@@ -30,6 +30,7 @@
   <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
   <build_depend>hector_tracked_vehicles_description</build_depend>
   <run_depend>hector_tracked_vehicles_description</run_depend>
+  <run_depend>hector_move_group_capabilities</run_depend>
 
 
 </package>
